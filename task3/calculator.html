@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="buttons">
+        <!-- first three rows mirror the image pattern -->
+        <button class="button" data-digit="7">7</button>
+        <button class="button" data-digit="8">8</button>
+        <button class="button" data-digit="9">9</button>
+        <button class="button operator" data-op="/">÷</button>
+
+        <button class="button" data-digit="4">4</button>
+        <button class="button" data-digit="5">5</button>
+        <button class="button" data-digit="6">6</button>
+        <button class="button operator" data-op="*">×</button>
+
+        <button class="button" data-digit="1">1</button>
+        <button class="button" data-digit="2">2</button>
+        <button class="button" data-digit="3">3</button>
+        <button class="button operator" data-op="-">−</button>
+
+        <!-- last row before equals -->
+        <button class="button" data-digit=".">.</button>
+        <button class="button" data-digit="0">0</button>
+        <button class="button operator" data-op="+">+</button>
+        <button class="button clear" id="clear">C</button>
+
+        <!-- equals spans entire bottom row -->
+        <button class="button equal" id="equals" style="grid-column: span 4;">=</button>
+    </div>
+</div>
+<script src="calculator.js"></script>
+
+</body>
+</html>
